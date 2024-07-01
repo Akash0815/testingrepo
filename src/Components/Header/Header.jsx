@@ -1,12 +1,12 @@
 import React from "react";
 
 import "./Header.css";
-
+import Navpages from "../../Navpages";
 import Button from "react-bootstrap/Button";
 import Card from "react-bootstrap/Card";
 import logo from "../Image/epiclogo.svg";
 import CardOne from "../Image/cardimage.svg";
-import CardFour from "../Image/certificate.svg";
+import CardFour from "../Image/certificate.png";
 import CardThree from "../Image/certified.svg";
 import CardTwo from "../Image/library.svg";
 function Header() {
@@ -128,6 +128,32 @@ function Header() {
                 </Card.Text>
               </Card.Body>
             </Card>
+          </div>
+        </div>
+      </section>
+      {/* <Navpages/> */}
+      <section>
+        <div className="container">
+          <div className="aboutSection">
+            <h3 className="About">About Us</h3>
+          </div>
+          <div className="aboutMainSection">
+            <div className="aboutContent">
+              <div className="aboutInfo">
+                <h3>
+                  {" "}
+                  <span>Welcome</span> To Epic World
+                </h3>
+                <p>
+                  At EPIC WORLD, we believe that education is not just about
+                  acquiring knowledge; it's about inspiring a passion for
+                  learning. Our institution has been a pillar of the educational
+                  community for many years, delivering high-quality educational
+                  services to students from diverse backgrounds.
+                </p>
+              </div>
+            </div>
+            <div className="aboutimg"></div>
           </div>
         </div>
       </section>
