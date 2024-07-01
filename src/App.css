@@ -31,6 +31,10 @@
 :root{
   --navBackground: #0A1512E5;
   --navBorder: 1px solid #707372;
+  --spanPrimaryColor:linear-gradient(90deg, #00A1FA 0%, #00C6C8 50.01%, #00F28E 100%, #0A4244 100.01%);
+  --primaryTextColor:#fff;
+  --cardBorder: 3px solid #FFFFFF;
+  --buttonBacground: linear-gradient(180deg, rgba(255, 253, 253, 0) 0%, rgba(255, 255, 255, 0.47) 276.27%);
 }
 
 
