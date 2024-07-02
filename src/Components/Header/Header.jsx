@@ -16,6 +16,10 @@ import Team2 from "../Image/Team/alam.png";
 import Team3 from "../Image/Team/figery.png";
 import Team4 from "../Image/Team/thomas.png";
 import User from "../Image/Team/user.png";
+import Apple from "../Image/Team/apple-logo.png";
+import Play from "../Image/Team/google-play.png";
+import Footer from "../Footer/Footer";
+import Achievement from "../../Pages/Achievement/Achievement";
 function Header() {
   return (
     <>
@@ -46,6 +50,7 @@ function Header() {
               </form>
             </div>
           </div>
+          
         </div>
         <section className="herosection">
           <div className="container">
@@ -213,41 +218,7 @@ function Header() {
       {/* Achievement section */}
 
       <section>
-        <div class="container">
-          <h1 className="achieve">Achievement</h1>
-          <p class="subtitle">
-            EPIC WORLD takes pride in the accomplishments of our students and
-            the recognition our institution has received over the years. Our
-            achievements are a testament to our commitment to excellence in
-            education.
-          </p>
-
-          <div className="chart">
-            <div className="bar" style={{ height: "60%;" }}></div>
-            <div className="bar" style={{ height: "100%;" }}></div>
-            <div className="bar" style={{ height: "80%;" }}></div>
-            <div className="bar" style={{ height: "40%;" }}></div>
-          </div>
-
-          <div className="stats">
-            <div className="stat-box">
-              <div className="stat-number">60</div>
-              <div className="stat-label">Teacher</div>
-            </div>
-            <div className="stat-box">
-              <div className="stat-number">40</div>
-              <div className="stat-label">Courses</div>
-            </div>
-            <div className="stat-box">
-              <div className="stat-number">900</div>
-              <div className="stat-label">Students</div>
-            </div>
-            <div className="stat-box">
-              <div className="stat-number">3675</div>
-              <div className="stat-label">Satisfied Client</div>
-            </div>
-          </div>
-        </div>
+        <Achievement />
       </section>
 
       {/* <section>
@@ -433,7 +404,7 @@ function Header() {
       </section>
 
       {/* faq */}
-      <section>
+      <section className="faq">
         <div class="container">
           <div className="faqSection">
             <div class="left-column">
@@ -464,17 +435,32 @@ function Header() {
             </div>
           </div>
           <div class="app-buttons">
-            <button class="app-button">
-              <img src="google-play-icon.png" alt="Google Play" />
-              GET IT ON GOOGLE PLAY
-            </button>
-            <button class="app-button">
-              <img src="app-store-icon.png" alt="App Store" />
-              DOWNLOAD ON THE APP STORE
-            </button>
+            <div class="d-flex align-items-center">
+              <h3 className="better">Build Better, Build Faster</h3>
+            </div>
+            <div class="d-flex gap-5">
+              {" "}
+              <button class="app-button">
+                <img src={Play} alt="Google Play" />
+                <p className="btnText">
+                  {" "}
+                  <span className="text"> GET IT ON</span> <br />
+                  GOOGLE PLAY
+                </p>
+              </button>
+              <button class="app-button">
+                <img src={Apple} alt="App Store" />
+                <p className="btnText">
+                  {" "}
+                  <span className="text">DOWNLOAD ON THE </span> <br /> APP
+                  STORE
+                </p>
+              </button>
+            </div>
           </div>
         </div>
       </section>
+      <Footer />
     </>
   );
 }

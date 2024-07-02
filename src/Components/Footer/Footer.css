@@ -1,0 +1,22 @@
+.footer {
+background: #0D1413;
+
+  color: #fff;
+  padding: 10px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.logo {
+  font-weight: bold;
+  font-size: 18px;
+}
+.copyright {
+  font-size: 14px;
+}
+.social-icons a {
+  color: #fff;
+  text-decoration: none;
+  margin-left: 15px;
+  font-size: 18px;
+}
