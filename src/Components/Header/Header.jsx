@@ -9,6 +9,7 @@ import CardOne from "../Image/cardimage.svg";
 import CardFour from "../Image/certificate.png";
 import CardThree from "../Image/certified.svg";
 import CardTwo from "../Image/library.svg";
+import About from "../Image/aboutImg.png";
 function Header() {
   return (
     <>
@@ -132,7 +133,7 @@ function Header() {
         </div>
       </section>
       {/* <Navpages/> */}
-      <section>
+      <section className="AboutUsSection">
         <div className="container">
           <div className="aboutSection">
             <h3 className="About">About Us</h3>
@@ -140,11 +141,12 @@ function Header() {
           <div className="aboutMainSection">
             <div className="aboutContent">
               <div className="aboutInfo">
-                <h3>
+                <h3 class="infoHeader">
                   {" "}
-                  <span>Welcome</span> To Epic World
+                  <span class="gradient">Welcome</span>
+                  <span className="newGradient">To Epic World</span>
                 </h3>
-                <p>
+                <p className="infoContent">
                   At EPIC WORLD, we believe that education is not just about
                   acquiring knowledge; it's about inspiring a passion for
                   learning. Our institution has been a pillar of the educational
@@ -152,8 +154,52 @@ function Header() {
                   services to students from diverse backgrounds.
                 </p>
               </div>
+              <div className="aboutInfo">
+                <h3 class="infoHeader">
+                  {" "}
+                  <span className="newGradient">Our</span>{" "}
+                  <span class="gradient"> History</span>
+                </h3>
+                <p className="infoContent">
+                  EPIC WORLD has a rich history of fostering learning and
+                  innovation. Founded in 2023, we have consistently evolved to
+                  meet the changing needs of our students. From humble
+                  beginnings, we have grown to become a respected institution in
+                  the field of education.
+                </p>
+              </div>
+              <div className="aboutInfo">
+                <h3 class="infoHeader">
+                  {" "}
+                  <span className="newGradient">Our</span>
+                  <span class="gradient">Mission</span>
+                </h3>
+                <p className="infoContent">
+                  Our mission is to provide accessible, high-quality education
+                  that empowers individuals to excel in their chosen fields. We
+                  are committed to equipping our students with the skills and
+                  knowledge they need to thrive in an ever-changing world.
+                </p>
+              </div>
+              <div className="aboutInfo">
+                <h3 class="infoHeader">
+                  {" "}
+                  <span className="newGradient">Our</span>
+                  <span class="gradient">Vission</span>
+                </h3>
+                <p className="infoContent">
+                  EPIC WORLD envisions a future where education transcends
+                  boundaries. Our vision is to be a global leader in innovative
+                  education, where both online and offline resources merge
+                  seamlessly to create a dynamic learning experience.
+                </p>
+              </div>
             </div>
-            <div className="aboutimg"></div>
+            <div className="aboutimg">
+              <figure>
+                <img src={About} alt="" />
+              </figure>
+            </div>
           </div>
         </div>
       </section>
