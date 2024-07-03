@@ -20,6 +20,8 @@ import Apple from "../Image/Team/apple-logo.png";
 import Play from "../Image/Team/google-play.png";
 import Footer from "../Footer/Footer";
 import Achievement from "../../Pages/Achievement/Achievement";
+import Testimoial from "../../Pages/Testimonial/Testimonial";
+import Teams from "../../Pages/Team/Teams";
 function Header() {
   return (
     <>
@@ -50,7 +52,6 @@ function Header() {
               </form>
             </div>
           </div>
-          
         </div>
         <section className="herosection">
           <div className="container">
@@ -220,188 +221,8 @@ function Header() {
       <section>
         <Achievement />
       </section>
-
-      {/* <section>
-        <div class="container py-5">
-          <div class="team-header">
-            <h2>OUR TEAM</h2>
-            <h1>
-              Our <span>Experienced</span> Team Member
-            </h1>
-          </div>
-          <div class="row g-4">
-            <div class="col-md-3">
-              <div class="team-card">
-                <img src={Team1} alt="ABD Rashid Khan" />
-                <div class="card-body">
-                  <h5 class="card-title">ABD Rashid Khan</h5>
-                  <h6 class="card-subtitle">Vice Chancellor</h6>
-                  <p class="card-text">
-                    ABD Rashid Khan, our esteemed Vice Chancellor, is the
-                    driving force behind our institution's vision and commitment
-                    to excellence. With a wealth of experience, he leads our
-                    academic community, guiding our institution with unwavering
-                    dedication.
-                  </p>
-                </div>
-              </div>
-            </div>
-            <div class="col-md-3">
-              <div class="team-card">
-                <img src={Team2} alt="Mr. Mahabub Alam" />
-                <div class="card-body">
-                  <h5 class="card-title">Mr. Mahabub Alam</h5>
-                  <h6 class="card-subtitle">Assistant Professor</h6>
-                  <p class="card-text">
-                    Mr. Mahabub Alam, our dedicated Assistant Professor, brings
-                    a wealth of knowledge and expertise to our academic team.
-                    With a passion for teaching and a deep commitment to student
-                    success, he plays a crucial role in shaping the minds of our
-                    students.
-                  </p>
-                </div>
-              </div>
-            </div>
-            <div class="col-md-3">
-              <div class="team-card">
-                <img src={Team3} alt="Luyes Figery" />
-                <div class="card-body">
-                  <h5 class="card-title">Luyes Figery</h5>
-                  <h6 class="card-subtitle">Professor</h6>
-                  <p class="card-text">
-                    Mr. Mahabub Alam, our esteemed Assistant Professor, is a key
-                    figure in our academic community. His enthusiasm for
-                    education and commitment to student success make him an
-                    invaluable asset to our institution.
-                  </p>
-                </div>
-              </div>
-            </div>
-            <div class="col-md-3">
-              <div class="team-card">
-                <img src={Team4} alt="Grace Thomas" />
-                <div class="card-body">
-                  <h5 class="card-title">Grace Thomas</h5>
-                  <h6 class="card-subtitle">Professor</h6>
-                  <p class="card-text">
-                    Grace Thomas, a distinguished member of the Epic team,
-                    brings a wealth of knowledge and expertise to her work in
-                    academic research. With over 20 years of experience in
-                    teaching, research, and mentoring.
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-      </section> */}
-
-      <section>
-        <div className="container">
-          <div className="testimonials">
-            <h3 className="test">Testimonial</h3>
-            <div className="user text-center">
-              <h3>
-                <span className="gradient">Expectional</span>{" "}
-                <span className="newGradient">User Satisfaction</span>
-                <p className="test-info">
-                  Discover what our students, alumni, and partners have to say
-                  about their experiences with Epic World. Read testimonials and
-                  success stories that showcase the impact of our educational
-                  services on their lives and careers.
-                </p>
-              </h3>
-            </div>
-            <div class="marquee-container">
-              <div class="marquee">
-                <div class="testimonial">
-                  <div class="testimonial-header">
-                    <img src={User} alt="John M" />
-                    <div>
-                      <div>John M</div>
-                      <div class="stars">★★★★★</div>
-                    </div>
-                  </div>
-                  <div class="testimonial-content">
-                    "The courses on the Brain World Sharpener site is a treasure
-                    trove of knowledge. The online staff is always receptive and
-                    ready to help, and the staff is always helpful. My only
-                    suggestion would be to expand the physical locations to
-                    other cities."
-                  </div>
-                </div>
-                <div class="testimonial">
-                  <div class="testimonial-header">
-                    <img src={User} alt="David L" />
-                    <div>
-                      <div>David L</div>
-                      <div class="stars">★★★★★</div>
-                    </div>
-                  </div>
-                  <div class="testimonial-content">
-                    "BWS offers an incredible range of courses for self-paced
-                    learning. The platform is user-friendly, and the content is
-                    up-to-date. However, I'd love to see more interactive
-                    features in their online courses to enhance the learning
-                    experience."
-                  </div>
-                </div>
-                <div class="testimonial">
-                  <div class="testimonial-header">
-                    <img src={User} alt="Sophie K" />
-                    <div>
-                      <div>Sophie K</div>
-                      <div class="stars">★★★★★</div>
-                    </div>
-                  </div>
-                  <div class="testimonial-content">
-                    "It interacts with a FITC World Community and was truly
-                    inspiring. The knowledge-sharing and networking
-                    opportunities were priceless. I left with a renewed sense of
-                    motivation and a network of like-minded individuals."
-                  </div>
-                </div>
-                <div class="testimonial">
-                  <div class="testimonial-header">
-                    <img src={User} alt="Tina R" />
-                    <div>
-                      <div>Tina R</div>
-                      <div class="stars">★★★★★</div>
-                    </div>
-                  </div>
-                  <div class="testimonial-content">
-                    "BWS is at the forefront of continuing education beauty.
-                    Their training courses are top-notch, covering the most
-                    relevant topics in today's industry. The instructors are
-                    highly knowledgeable, and the certification programs are
-                    well-structured and comprehensive."
-                  </div>
-                </div>
-              </div>
-
-              {/* <div className="marquee">
-                  <div class="testimonial">
-                    <div class="testimonial-header">
-                      <img src={User} alt="John M" />
-                      <div>
-                        <div>John M</div>
-                        <div class="stars">★★★★★</div>
-                      </div>
-                    </div>
-                    <div class="testimonial-content">
-                      "The courses on the Brain World Sharpener site is a
-                      treasure trove of knowledge. The online staff is always
-                      receptive and ready to help, and the staff is always
-                      helpful. My only suggestion would be to expand the
-                      physical locations to other cities."
-                    </div>
-                  </div>
-              </div> */}
-            </div>
-          </div>
-        </div>
-      </section>
+      <Teams />
+      <Testimoial />
 
       {/* faq */}
       <section className="faq">

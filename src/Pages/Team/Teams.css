@@ -1,0 +1,124 @@
+.headerTeam {
+    padding-block: 40px;
+    margin-block: 30px;
+}
+
+.fontSize {
+    /* font-family: Inter; */
+    font-size: 48px;
+    font-weight: 800;
+    line-height: 58.09px;
+    text-align: left;
+
+}
+
+.fontexp {
+    /* font-family: Inter; */
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 58.09px;
+    text-align: left;
+
+}
+
+.userName {
+    /* font-family: Inter; */
+    font-size: 23px;
+    font-weight: 800;
+    line-height: 27.84px;
+    text-align: center;
+    color: #000;
+}
+
+.ourTeam {
+    font-size: 16px;
+    font-weight: normal;
+    margin: 0;
+    text-align: center;
+    color: #fff;
+}
+
+.teamMembers {
+    font-size: 24px;
+    margin: 10px 0;
+    text-align: center;
+}
+
+.highlight {
+    color: #00ff00;
+}
+
+.team-grid {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.team-member {
+    background-color: white;
+    border-radius: 33px;
+    /* overflow: hidden; */
+    width: calc(25% - 15px);
+    position: relative;
+    border: 1px solid grey
+}
+
+.team-member img {
+    position: absolute;
+    top: -46px;
+    left: 15%;
+    /* right: -20px; */
+    /* height: 220px; */
+    object-fit: cover;
+    /* background-color: #006666; */
+    width: 67%;
+}
+
+.teamimg {
+    position: relative;
+    height: 200px;
+}
+
+.team-info {
+    position: relative;
+    padding: 20px;
+}
+
+.team-member h3 {
+    color: #333;
+    margin: 0;
+    font-size: 18px;
+}
+
+.team-member .title {
+    margin: 5px 0;
+    font-size: 14px;
+    /* font-family: Inter; */
+    font-weight: 800;
+    line-height: 16.94px;
+    text-align: center;
+
+}
+
+.memberAbout {
+    /* font-family: Inter; */
+    font-size: 11px;
+    font-weight: 500;
+    line-height: 13.31px;
+    text-align: center;
+
+}
+
+.team-member p {
+    color: #666;
+    font-size: 12px;
+    margin: 10px 0 0;
+}
+
+.banner {
+    background-image: url('../../Components/Image/Banner/banner.jpg');
+    background-repeat: no-repeat;
+    /* background-attachment:fixed; */
+    background-size: cover;
+    border-radius: 33px 33px 0 0;
+}
