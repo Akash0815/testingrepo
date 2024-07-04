@@ -1,118 +1,138 @@
-.testimonials{
-    padding-block:30px;
-}
-.test {
-    text-transform: uppercase;
-    font-family: "Inter", sans-serif;
-    font-size: 22px;
-    font-weight: 500;
-    line-height: 26.63px;
-    text-align: center;
-    color: #fff;
-}
-
-.test-info {
-    font-family: "Inter", sans-serif;
-    font-size: 16px;
-    font-weight: 500;
-    line-height: 23.02px;
-    text-align: center;
-    color: #fff;
-}
-
-
-.marquee-container {
-    width: 100%;
-    overflow: hidden;
-    padding-block: 30px;
-}
-
-.marquee {
-    display: flex;
-    animation: scroll 40s linear infinite;
-}
-
-/* .testimonial {
-            flex: 0 0 300px;
-            background-color: rgba(255, 255, 255, 0.1);
-            border-radius: 33px;
-            padding: 20px;
-            margin-right: 20px;
-            background: #1B2B28;
-
-        } */
-
-.testimonial {
-    flex: 0 0 300px;
-    background-color: rgba(255, 255, 255, 0.1);
+.testimonial-section {
+    background-color: #0D1413;
+    color: white;
     padding: 20px;
-    margin-right: 20px;
-    background: #1B2B28;
-    border-radius: 33px;
     position: relative;
-    z-index: 0;
 }
 
-.testimonial::before {
-    content: '';
-    position: absolute;
-    top: -4px;
-    bottom: -4px;
-    left: -4px;
-    right: -4px;
-    border-radius: 33px;
-    border: 4px solid transparent;
-    background: linear-gradient(180deg, #1B2A28 0%, #27E9C6 27.85%, #27E9C6 84.45%, #1B2A28 100%);
-    -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
-    -webkit-mask-composite: destination-out;
-    mask-composite: exclude;
-    /* This applies the gradient as a border */
-    z-index: -1;
-    /* Places the pseudo-element behind the content */
+.testimonial-section h1 {
+    text-align: center;
+    margin-bottom: 10px;
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 1.2;
+}
+
+.testName {
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 1.2;
+    text-align: center;
+    color: #fff;
+    margin: 10px 0;
+}
+
+.subtitle {
+    text-align: center;
+    max-width: 90%;
+    margin: 0 auto 20px;
+    font-size: 14px;
+}
+
+.carousel-container {
+    position: relative;
+    max-width: 100%;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.carousel {
+    display: flex;
+    gap: 20px;
+    transition: transform 0.3s ease;
+}
+
+.testimonial-card {
+    background: #1B2B28;
+    border-radius: 20px;
+    padding: 15px;
+    width: 100%;
+    min-width: 250px;
+    box-sizing: border-box;
+}
+
+.testimonialInfo {
+    font-size: 12px !important;
+    font-weight: 500;
+    line-height: 1.4;
+    text-align: left;
 }
 
 .testimonial-header {
     display: flex;
     align-items: center;
     margin-bottom: 10px;
+    gap: 10px;
 }
 
-.testimonial-header img {
-    width: 50px;
-    height: 50px;
+.avatar {
+    width: 30px;
+    height: 30px;
+    /* background-color: #4a4a4a; */
     border-radius: 50%;
-    margin-right: 10px;
+}
+.avatar img{
+    width:30px;
+    height: 30px;
+}
+.name-rating h3 {
+    margin: 0;
+    font-size: 14px;
 }
 
-.stars {
-    color: gold;
+.nav-button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(255, 255, 255, 0.2);
+    border: none;
+    color: white;
+    font-size: 20px;
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 50%;
 }
 
-.testimonial-content {
-    font-size: 12px;
-    font-weight: 500;
-    line-height: 17.26px;
-    text-align: left;
-    color: #fff;
+.prev {
+    left: 10px;
 }
-.marquee1{
-    display: flex;
-    animation: right 40s linear infinite;
+
+.next {
+    right: 10px;
 }
-@keyframes right {
-    0% {
-        transform: translateX(-100%);
+
+@media (max-width: 768px) {
+    .testimonial-header{
+        gap:40px;
     }
-    100% {
-        transform: translateX(0%);
-    }
-}
-@keyframes scroll {
-    0% {
-        transform: translateX(0);
+    .testimonial-section h1 {
+        font-size: 24px;
     }
 
-    100% {
-        transform: translateX(-100%);
+    .testName {
+        font-size: 16px;
+    }
+
+    .subtitle {
+        font-size: 12px;
+    }
+
+    .carousel {
+        flex-wrap: nowrap;
+    }
+
+    .testimonial-card {
+        min-width: 80%;
+    }
+}
+
+@media (max-width: 480px) {
+    .testimonial-card {
+        min-width: 100%;
+    }
+
+    .nav-button {
+        font-size: 16px;
+        padding: 8px;
     }
 }
