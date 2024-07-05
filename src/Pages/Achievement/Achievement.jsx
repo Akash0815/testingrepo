@@ -13,7 +13,11 @@ const Achievement = () => {
             achievements are a testament to our commitment to excellence in
             education.
           </p>
-          <div className="graph">
+          {/* <div className="position-relative">
+            <div className="position-absolute graph-position"></div>
+          </div> */}
+
+          <div className="graph gg">
             <div className="bar bar-1"></div>
             <div className="bar bar-2"></div>
             <div className="bar bar-3"></div>
